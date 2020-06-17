@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 100%;
 }
+
+/* --Main content-- */
 
 body {
   display: flex;
@@ -12,30 +13,85 @@ body {
   height: 100vh;
   background-image: url(assets/background-3.jpg);
   background-size: cover;
-  
 }
 
 .main-content {
-  width: 500px;
-  max-width: calc(100vw - 10px);
-  height: 580px;
-  padding: 5px 10px;
+  width: 90vw;
+  padding: 5px 10px 20px;
   background-color: hsla(0, 0%, 80%, .6);
   box-shadow: hsla(0, 0%, 0%, .8) 5px 5px 20px;
   border-radius: 5px;
+  margin: 0 auto;
 }
 
 .nametag {
+  width: 100%;
   font-size: 18px;
   font-family: 'Rubik', sans-serif;
-  
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
+.profile-picture {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -40px;
+  text-align: center;
+}
+
+.introduction {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 18px;
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+  padding: 30px 20px;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.social {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 28px;
+}
+
+/* --MEDIA QUERIES-- */
+
+
+/* Mobile version*/
+
+@media screen and (min-width: 320px) {
+  .main-content {
+    width: 280px;
+  }
+}
+
+/* Tablet version */
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    width: 500px;
+  }
+}
+
+/* Desktop version */
+
+@media screen and (min-width: 1200px) {
+  .main-content {
+    width: 700px;
+  }
+}
+
+
 h1 {
-  font-size: 22px;
+  font-size: 1.375rem;
   padding: 15px 0 15px 0;
   font-weight: bold;
-  
 }
 
 span {
@@ -43,38 +99,6 @@ span {
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   color: darkslategrey;
-}
-
-.social {
-  text-align: center;
-  margin: 0 auto;
-  
-}
-
-section {
-  width: 40%;
-}
-
-.head, .introduction {
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.introduction {
-  border-top: 1px solid hsla(0, 0%, 30%, .8);
-  padding: 40px;
-  font-family: 'Karla', sans-serif;
-  font-weight: bold;
-  color: black;
-}
-
-.profile-picture {
-  
-  margin-top: -70px;
-
-  
 }
 
 img {
@@ -107,24 +131,8 @@ ul:hover {
   transition: all 0.5s ease-in-out;
 }
 
-
-.social {
-  font-size: 28px;
-}
-
 h2 {
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
   padding-bottom: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
